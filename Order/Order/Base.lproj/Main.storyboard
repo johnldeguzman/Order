@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Order" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xwZ-3N-hUQ">
+                                <rect key="frame" x="0.0" y="93" width="381" height="574"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0r-zH-MMG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="237"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wca-kC-nsl">
+                                        <rect key="frame" x="16" y="22" width="343" height="38"/>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.46666666670000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="ipW-hx-bIr"/>
+                                        </constraints>
+                                        <state key="normal" title="Generate Order">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bE-Iz-JjZ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank you for creating an order. Your order is: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDa-R9-zIq">
+                                        <rect key="frame" x="16" y="68" width="343" height="62"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wca-kC-nsl" firstAttribute="leading" secondItem="k0r-zH-MMG" secondAttribute="leading" constant="16" id="9f3-Gv-JED"/>
+                                    <constraint firstAttribute="trailing" secondItem="vDa-R9-zIq" secondAttribute="trailing" constant="16" id="IBY-Ea-eBK"/>
+                                    <constraint firstAttribute="trailing" secondItem="wca-kC-nsl" secondAttribute="trailing" constant="16" id="MLg-N5-LHE"/>
+                                    <constraint firstAttribute="height" constant="237" id="Q5N-zL-EYM"/>
+                                    <constraint firstItem="vDa-R9-zIq" firstAttribute="top" secondItem="wca-kC-nsl" secondAttribute="bottom" constant="8" id="QXX-HJ-RKW"/>
+                                    <constraint firstItem="wca-kC-nsl" firstAttribute="top" secondItem="k0r-zH-MMG" secondAttribute="top" constant="22" id="UBj-iK-Evt"/>
+                                    <constraint firstItem="vDa-R9-zIq" firstAttribute="leading" secondItem="k0r-zH-MMG" secondAttribute="leading" constant="16" id="pWT-cP-5L4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqj-Qn-14U">
+                                <rect key="frame" x="0.0" y="255" width="375" height="412"/>
+                                <color key="backgroundColor" red="0.2105389030612245" green="0.22231079931972789" blue="0.21394026360544219" alpha="0.54469903523489938" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k0r-zH-MMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4LD-Qz-Lmr"/>
+                            <constraint firstItem="k0r-zH-MMG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4hG-NH-BEE"/>
+                            <constraint firstItem="xwZ-3N-hUQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5Bh-dS-HLQ"/>
+                            <constraint firstItem="xwZ-3N-hUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ba-bS-L4T"/>
+                            <constraint firstItem="qqj-Qn-14U" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9eC-XL-8du"/>
+                            <constraint firstItem="k0r-zH-MMG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LXc-kg-N7l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qqj-Qn-14U" secondAttribute="bottom" id="Nvz-ge-h8H"/>
+                            <constraint firstItem="qqj-Qn-14U" firstAttribute="top" secondItem="k0r-zH-MMG" secondAttribute="bottom" id="TBW-yw-dQJ"/>
+                            <constraint firstItem="xwZ-3N-hUQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d3q-Kg-cJQ"/>
+                            <constraint firstItem="qqj-Qn-14U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lrk-jO-27q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xwZ-3N-hUQ" secondAttribute="bottom" id="w1H-b4-NGs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createOrderLabel" destination="vDa-R9-zIq" id="wUi-yU-bt2"/>
+                        <outlet property="generateOrder" destination="wca-kC-nsl" id="ILj-I1-eUb"/>
+                        <outlet property="hidden" destination="qqj-Qn-14U" id="nYb-jV-e3s"/>
+                        <outlet property="map" destination="xwZ-3N-hUQ" id="DoI-rG-1dL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

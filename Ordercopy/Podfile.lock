@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.0.1)
+  - FlexibleSteppedProgressBar (0.1.0)
+  - NVActivityIndicatorView (3.0)
+  - Presentr (1.0.1)
+  - SwiftyJSON (3.1.1)
+  - SwiftyTimer (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - FlexibleSteppedProgressBar
+  - NVActivityIndicatorView
+  - Presentr
+  - SwiftyJSON
+  - SwiftyTimer
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  FlexibleSteppedProgressBar: 72e677b92945988a9596cd0418d93fe27e367a24
+  NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
+  Presentr: d031e73e45b5fb18e4807e839aafc53b06d65306
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
+
+PODFILE CHECKSUM: 4316292fd8595e9e027cb763cc21874e9ffb6f11
+
+COCOAPODS: 1.0.1

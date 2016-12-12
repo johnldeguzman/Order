@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.0.1)
+  - SwiftyJSON (3.1.1)
+  - SwiftyTimer (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftyJSON
+  - SwiftyTimer
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
+
+PODFILE CHECKSUM: b0dbeed092a7c852ef20e141bea2d003aa61fe2a
+
+COCOAPODS: 1.0.1

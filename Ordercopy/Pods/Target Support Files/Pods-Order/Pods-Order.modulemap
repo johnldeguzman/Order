@@ -1,0 +1,6 @@
+framework module Pods_Order {
+  umbrella header "Pods-Order-umbrella.h"
+
+  export *
+  module * { export * }
+}
